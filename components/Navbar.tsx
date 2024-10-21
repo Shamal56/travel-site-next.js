@@ -1,4 +1,4 @@
-import { NavLinks } from "@/constants";
+import { NAV_LINKS, NavLinks } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
@@ -11,7 +11,7 @@ const Navbar = () => {
       </Link>
 
       <ul className="hidden h-full gap-12 lg:flex">
-        {NavLinks.map((link) => (
+        {NAV_LINKS.map((link) => (
           <Link
             href={link.href}
             key={link.key}
